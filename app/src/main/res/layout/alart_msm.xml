@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:background="#3E80B4"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Bluetooth Conection"
+        android:textColor="#02eaea"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textv"
+            android:layout_width="match_parent"
+            android:text="hello"
+            android:textSize="15sp"
+            android:textColor="#e28316"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <ImageButton
+            android:id="@+id/clint"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="#00ffffff"
+            android:scaleType="fitXY"
+            android:src="@drawable/clint" />
+
+        <ImageButton
+
+            android:id="@+id/server"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerInParent="true"
+            android:background="#00ffffff"
+            android:scaleType="fitXY"
+            android:src="@drawable/server" />
+
+        <ImageButton
+            android:id="@+id/nobt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="25dp"
+            android:background="#00ffffff"
+            android:onClick="buttonaction"
+            android:scaleType="fitXY"
+            android:src="@drawable/no" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

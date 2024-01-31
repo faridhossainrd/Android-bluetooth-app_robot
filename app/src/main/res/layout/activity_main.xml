@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#6d78d3e7"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Bluetooth Device controll"
+            android:textSize="15sp"
+            android:textColor="#00f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/cirprog"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            style="?android:progressBarStyleHorizontal"
+            android:progress="90"
+            android:progressDrawable="@drawable/circuil"
+
+            />
+        <TextView
+            android:id="@+id/refres"
+            android:text=" Refresh    0 "
+            android:textSize="15sp"
+            android:textColor="#080"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switchb"
+        android:layout_marginTop="10dp"
+        android:textColor="#f00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Connected Device"
+        android:textSize="15sp"
+        android:textColor="#00f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cntnam"
+        android:layout_marginTop="5dp"
+        android:text="null"
+        android:textSize="18sp"
+        android:textColor="#0b0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="2.4"
+        >
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Paired Old Devices"
+            android:textSize="15sp"
+            android:textColor="#00f"
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+        <ListView
+            android:id="@+id/btlistpart"
+            android:divider="#796ede"
+            android:dividerHeight="1dp"
+            android:listSelector="#796ede"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </ListView>
+
+        <TextView
+            android:text="UnPaired New Device"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#c08"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_height="0dp" />
+
+
+        <ListView
+            android:id="@+id/btlistunpart"
+            android:divider="#00d0ff"
+            android:dividerHeight="1dp"
+            android:listSelector="#9468eaea"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

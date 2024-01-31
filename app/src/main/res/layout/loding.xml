@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#666fff"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progrs"
+        style="@style/SpinKitView.Large.Circle"
+        app:SpinKit_Color="@color/colorAccent"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="#2f5"
+        android:text="Wait for Contenting......"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/butn"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:background="#E91E63"
+            android:text="cancel" />
+    </RelativeLayout>
+
+
+</LinearLayout>
