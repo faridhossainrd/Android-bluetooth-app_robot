@@ -1,7 +1,7 @@
 Overview</br>
 This Android application is designed to control a robot via Bluetooth communication. It provides a user-friendly interface to send commands wirelessly to a robot equipped with a compatible Bluetooth module.
 
-Features
+Features</br>
 Bluetooth Connectivity: Connect the app to your robot using Bluetooth for seamless communication.
 Intuitive Control Interface: Effortlessly control the robot's movements with a user-friendly interface.
 Customizable Commands: Define and send custom commands to the robot based on its capabilities.
